@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tarefas</string>
+    <string name="texto1">All tasks completed</string>
+    <string name="texto2">Nice work!</string>
+</resources>
