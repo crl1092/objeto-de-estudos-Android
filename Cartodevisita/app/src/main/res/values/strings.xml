@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cartão de visita</string>
+    <string name="Nome">Cristhiano Rodrigues</string>
+    <string name="funcao">Estudante universitário</string>
+    <string name="telefone">Whatsapp: +55 (77) 9 9824–1285</string>
+    <string name="email">Email: Rodriguescristhiano4@gmail.com</string>
+    <string name="github">Github: @crl1092</string>
+    <string name="instagram">Instagram: @cristhianorodrigues7874</string>
+    <string name="linkedin">Linkedin: @cristhiano rodrigues</string>
+
+</resources>
