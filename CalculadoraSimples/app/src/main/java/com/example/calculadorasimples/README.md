@@ -14,7 +14,7 @@ Transformar uma lógica de calculadora desenvolvida em Kotlin puro para uma inte
 
 ## 📸 Resultado Visual
 <p align="center">
-  <img src="https://github.com/crl1092/objeto-de-estudos-Android/blob/main/Prints_De_Projeto/CalculadoraSimples.png?raw=true" width="300">
+  <img src="https://github.com/crl1092/objeto-de-estudos-Android/blob/main/Prints_De_Projeto/CalculadoraSimples.png" width="300">
 </p>
 
 ---
