@@ -1,3 +1,7 @@
+[← Voltar ao Índice Principal](../README.md)
+
+# 🧮 Calculadora Simples
+...
 # 🧮 Calculadora Simples - Jetpack Compose
 
 Este projeto faz parte do meu portfólio de estudos em **Engenharia de Software**, focado no desenvolvimento Android moderno com **Jetpack Compose**.
@@ -14,7 +18,7 @@ Transformar uma lógica de calculadora desenvolvida em Kotlin puro para uma inte
 
 ## 📸 Resultado Visual
 <p align="center">
-  <img src="https://github.com/crl1092/objeto-de-estudos-Android/blob/main/Prints_De_Projeto/CalculadoraSimples.png" width="300">
+  <img src="./Prints_De_Projetos/CalculadoraSimples.png" width="300">
 </p>
 
 ---
