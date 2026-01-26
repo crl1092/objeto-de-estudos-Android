@@ -1,4 +1,4 @@
-[← Voltar ao Índice Principal](../README.md)
+[← Voltar ao Índice Principal](..)
 
 # 🧮 Calculadora Simples
 ...
