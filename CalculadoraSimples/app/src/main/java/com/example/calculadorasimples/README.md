@@ -14,7 +14,7 @@ Transformar uma lógica de calculadora desenvolvida em Kotlin puro para uma inte
 - **Arquitetura**: Separação de responsabilidades criando pacotes específicos para `logic` (regras de negócio) e `ui`.
 - **UX/UI**: Implementação de teclado numérico (`KeyboardOptions`) e espaçamentos dinâmicos com `Spacer`.
 - **Segurança**: Tratamento de entradas nulas ou inválidas com `toDoubleOrNull()`.
-- **Novas Funcionalidades**: Histórico de operações em tempo real e validação contra divisão por zero.
+- **Novas Funcionalidades**: Histórico de operações em tempo real , validação contra divisão por zero e uma forma de apagar o histórico.
 
 ## 📸 Resultado Visual
 <p align="center">
