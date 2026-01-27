@@ -30,6 +30,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -100,7 +101,8 @@ fun CalculadoraScreen() {
             value = numero1,
             onValueChange = { numero1 = it },
             label = { Text("Número 1") },
-            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+            keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Number,
+                imeAction = ImeAction.Next),
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(30.dp))
@@ -111,7 +113,8 @@ fun CalculadoraScreen() {
             value = numero2,
             onValueChange = { numero2 = it },
             label = { Text("Número 2") },
-            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+            keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Number,
+                imeAction = ImeAction.Done),
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(30.dp))
@@ -135,8 +138,23 @@ fun CalculadoraScreen() {
                 onClick = { operacao = "/"; calcular(); historico.add(0,"$numero1 / $numero2 = $resultado") }) { Text("/",
                 fontWeight = FontWeight.Bold) }
         }
-        Spacer(modifier = Modifier.height(15.dp))
-        Button(onClick = { numero1 = ""; numero2 = ""; operacao = ""; resultado = ""; }) { Text("Limpar a tela", fontWeight = FontWeight.Bold) }
+        Row ( modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly) {
+
+            Button(onClick = { numero1 = ""; numero2 = ""; operacao = ""; resultado = ""; }) {
+                Text(
+                    "Limpar a tela",
+                    fontWeight = FontWeight.Bold
+                )
+            }
+            Spacer(modifier = Modifier.height(15.dp))
+            Button(onClick = { historico.clear();}) {
+                Text(
+                    "Limpar histórico",
+                    fontWeight = FontWeight.Bold
+                )
+            }
+        }
         Spacer(modifier = Modifier.height(30.dp))
         Text(
             text = "Resultado: $resultado",
@@ -150,7 +168,9 @@ fun CalculadoraScreen() {
             fontWeight = FontWeight.Bold
         )
         Spacer(modifier = Modifier.height(15.dp))
-        LazyColumn(modifier = Modifier.fillMaxWidth().padding(8.dp))  {
+        LazyColumn(modifier = Modifier
+            .fillMaxWidth()
+            .padding(8.dp))  {
             items(historico.size) {
                 Card(modifier = Modifier.padding(vertical = 4.dp),
                     elevation = CardDefaults.cardElevation(4.dp))   { Text(text = historico[it],
