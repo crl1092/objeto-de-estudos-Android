@@ -16,6 +16,14 @@ Transformar uma lógica de calculadora desenvolvida em Kotlin puro para uma inte
 - **Segurança**: Tratamento de entradas nulas ou inválidas com `toDoubleOrNull()`.
 - **Novas Funcionalidades**: Histórico de operações em tempo real , validação contra divisão por zero e uma forma de apagar o histórico.
 
+### 🧠 Conceitos de Engenharia Aplicados
+Neste projeto, apliquei padrões recomendados pelo Google para o desenvolvimento com Jetpack Compose:
+
+* **State Hoisting (Elevação de Estado):** Implementei a separação entre componentes que gerenciam o estado (Stateful) e componentes que apenas exibem dados (Stateless). Isso torna a interface mais previsível e fácil de testar.
+* **Unidirectional Data Flow (Fluxo de Dados Unidirecional):** O estado "desce" para os componentes de interface (Data Down) e os eventos de interação "sobem" para serem processados pela lógica central (Events Up).
+* **Modularização de UI:** Criei componentes reutilizáveis, como o `CalculadoraInput`, reduzindo a duplicação de código e facilitando a manutenção.
+* **Tratamento de Exceções:** Implementei verificações para entradas inválidas e proteção contra erros matemáticos (como divisão por zero), garantindo a estabilidade do app.
+
 ## 📸 Resultado Visual
 <p align="center">
   <img src="./Prints_De_Projetos/CalculadoraSimples.png" width="300">
