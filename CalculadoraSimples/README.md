@@ -1,4 +1,4 @@
-[← Voltar ao Índice Principal](../../../../../../../../../../)
+[← Voltar ao Índice Principal](../README.md)
 
 # 🧮 Calculadora Simples
 ...
