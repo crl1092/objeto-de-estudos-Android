@@ -158,17 +158,17 @@ fun CalculadoraScreen() {
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
             Button(modifier = Modifier.padding(4.dp),
-                   onClick = { executarOperacao("+") }) { Text("+",
-                       fontWeight = FontWeight.Bold) }
-                       Button(modifier = Modifier.padding(4.dp),
-                              onClick = { executarOperacao("-") }) { Text("-",
-                                  fontWeight = FontWeight.Bold) }
-                                  Button(modifier = Modifier.padding(4.dp),
-                                         onClick = { executarOperacao("*") }) { Text("*",
-                                             fontWeight = FontWeight.Bold) }
-                                             Button(modifier = Modifier.padding(4.dp),
-                                                    onClick = { executarOperacao("/") }) { Text("/",
-                                                        fontWeight = FontWeight.Bold) }
+                onClick = { executarOperacao("+") }) { Text("+",
+                fontWeight = FontWeight.Bold) }
+            Button(modifier = Modifier.padding(4.dp),
+                onClick = { executarOperacao("-") }) { Text("-",
+                fontWeight = FontWeight.Bold) }
+            Button(modifier = Modifier.padding(4.dp),
+                onClick = { executarOperacao("*") }) { Text("*",
+                fontWeight = FontWeight.Bold) }
+            Button(modifier = Modifier.padding(4.dp),
+                onClick = { executarOperacao("/") }) { Text("/",
+                fontWeight = FontWeight.Bold) }
         }
         Row ( modifier = Modifier.fillMaxWidth(),
               horizontalArrangement = Arrangement.SpaceEvenly) {
@@ -206,7 +206,7 @@ fun CalculadoraScreen() {
                   items(historico.size) {
                       Card(modifier = Modifier.padding(vertical = 4.dp),
                            elevation = CardDefaults.cardElevation(4.dp))   { Text(text = historico[it],
-                               modifier = Modifier.padding(8.dp)) }
+                            modifier = Modifier.padding(8.dp)) }
                   }
               }
     }
